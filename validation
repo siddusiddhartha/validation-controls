@@ -1,0 +1,115 @@
+
+Email:
+======
+The email element of input text type should be represented like this inorder to validate.
+
+Email Address: <input type='text' id='txtEmail'/><br/>
+<input type='submit' id='btnValidate' Value='Validate Email' />
+
+
+
+
+This is the function to check the validation of email
+-------------------------------------------------------
+$(document).ready(function(e) {
+    $('#txtEmail').blur(function() {
+        var sEmail = $('#txtEmail').val();
+        if ($.trim(sEmail).length == 0) {
+            alert('Please enter valid email address');//replace alert with showerror($ctrl)
+            e.preventDefault();
+        }
+        if (validateEmail(sEmail)) {
+            alert('Email is valid');//replace this line with hide error line($ctrl)
+        }
+        else {
+            alert('Invalid Email Address');//replace this line with show error($ctrl)
+            e.preventDefault();
+        }
+    });
+});
+
+function validateEmail(sEmail) {
+    var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    if (filter.test(sEmail)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+
+
+radiobuttons:
+=============
+
+$('input[type=radio][name=radiobuttonlistID]:checked').length -- gives length 
+=----
+if length =0; not checked 
+
+
+$('input[type=radio][name="radiobuttonlistID"]').prop('checked', false);
+
+
+checkbox:
+=========
+$('input[type=checkbox]:checked').length 
+
+gives length if length= 0 not checked;
+
+file:
+======
+This indicates the file type whether image is jpg or png or gif
+----------------------------------------------------------------
+$("#user_profile_pic").change(function() {
+
+    var val = $(this).val();
+
+    switch(val.substring(val.lastIndexOf('.') + 1).toLowerCase()){
+        case 'gif': case 'jpg': case 'png':
+            alert("an image");
+            break;
+        default:
+            $(this).val('');
+            // error message here
+            alert("not an image");
+            break;
+    }
+});
+
+-------------------------------------------------------------------
+The above image type can also be done using the regular expressions
+
+var val = $("#user_profile_pic").val();
+if (!val.match(/(?:gif|jpg|png|bmp)$/)) {
+    // inputted file path is not an image of one of the above types
+    alert("inputted file path is not an image!");
+}
+
+---------------------------------------------------------------------
+Files size checking:
+====================
+
+The below method can be used to check the file size in the form 
+
+------------------------------------
+ here goes the html part
+
+<form enctype="multipart/form-data">
+<input name="file" type="file" />
+<input type="submit" value="Upload" />
+</form>
+------------------------------------
+$(':file').change(function(){
+    var file = this.files[0];
+    name = file.name;//file name 
+    size = file.size;//file size
+    type = file.type;//file type
+    //your validation
+    
+	if (size >20000)
+	{//your code goes here}
+});
+
+
+
