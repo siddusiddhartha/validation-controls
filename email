@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<html><head>
   <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
   <title>Email Template</title>
   <style content="text/css">
@@ -9,6 +6,10 @@
       width: 600px;
       height: 200px;
       padding: 10px;
+    }
+    .content-container p{
+      width:550px;
+      margin:10px;
     }
   </style>
 </head>
@@ -20,69 +21,77 @@
     <v:fill type="tile" src ="http://hdwallnpics.com/wp-content/gallery/background-images-for-html/backgroundUwall.jpg" color ="#7bceeb"/>
   </v:background>
   <![endif]-->
-    <table height="110%" width="970" cellpadding="0" cellspacing="0" border="0" align="center">
-      <tr>
-        <td valign="top" height="600" width="970" align="left" background="http://hdwallnpics.com/wp-content/gallery/background-images-for-html/backgroundUwall.jpg">
-          <table class="containter" width="970" cellspacing="0" cellpadding="0" align="center">
-            <tr>
+    <table width="970" height="110%" cellspacing="0" cellpadding="0" border="0" align="center">
+      <tbody><tr>
+        <td width="970" valign="top" height="775" background="http://hdwallnpics.com/wp-content/gallery/background-images-for-html/backgroundUwall.jpg" align="left">
+          <table width="970" cellspacing="0" cellpadding="0" align="center" class="containter">
+            <tbody><tr>
               <td>
                 <img src="http://183.82.96.65/website/images/CRMLogo.png" alt="CRM logo">
               </td>
               <td>
-                <img src="https://raw.githubusercontent.com/siddusiddhartha/images/master/2015-11-20%2020h18_53.gif" alt="CRM logo" </td>
-            </tr>
+                <img src="https://raw.githubusercontent.com/siddusiddhartha/images/master/2015-11-20%2020h18_53.gif" alt="CRM logo">
+            </td></tr>
             <tr>
-              <table cellspacing="0" width="900" align="center" style="background-color:#ffffff; border-radius:15px 0px 0px 0px; margin-top:-50px !important;">
-                <tr>
+              </tr></tbody></table><table width="900" cellspacing="0" align="center" style="background-color:#ffffff; border-radius:15px 0px 0px 0px; margin-top:-50px !important;">
+                <tbody><tr>
                   <td>
                     <h1 style="margin:20px;">This is the text Area
-                      <h2>
-                  </td>
+                      </h1></td>
                   <td>
                     <h2> Image section </h2>
                   </td>
                 </tr>
-            </tr>
+
             <tr>
-              <table cellspacing="0" width="900" align="center" style="background-color:#ffffff;">
-                <tr>
-                  <td class="content-container">
-                    <p>There is a diagnostic tool available with CRM to help monitor the speed of your client computer and latency in your data center. The tool collects the following data and it has no impact on the client machine. It runs a couple tests
+              </tr></tbody></table><table width="900" cellspacing="0" align="center" style="background-color:#ffffff;">
+                <tbody><tr>
+                  <td class="content-container" colspan="2">
+                    <p style="margin:20px;">There is a diagnostic tool available with CRM to help monitor the speed of your client computer and latency in your data center. The tool collects the following data and it has no impact on the client machine. It runs a couple tests
                       Latency Test, Bandwidth Test, JavaScript Array Benchmark, JavaScript Morph Benchmark, JavaScript Base64 Benchmark etc. These tests are designed to monitor the speed of your client computer and the latency to your data center.
                     </p>
-                    <p>To run the test 1.Launch the tool (via https://OrgURL/tools/diagnostics/diag.aspx) as a user in an Admin role in Dynamics CRM. 2.Click the Run button for All Tests.</p>
+                    <p style="margin:20px;">To run the test 1.Launch the tool (via https://OrgURL/tools/diagnostics/diag.aspx) as a user in an Admin role in Dynamics CRM. 2.Click the Run button for All Tests.</p>
                   </td>
                 </tr>
-              </table>
-            </tr>
-            <tr>
-              <table cellspacing="0" width="900" align="center" style="background-color:#ffffff;">
-                <tr>
-                  <td style="padding:20px; height:100px;">
+<tr>
+                  <td style="padding:20px; height:100px;width:350px">
                     <h4>References</h4>
                     <div><a href="http://crmtipoftheday.com/">http://crmtipoftheday.com/</a></div>
                   </td>
                   <td>
                     <table>
-                      <tr>
+                      <tbody><tr>
                         <td>
-                          <img class="image" src="https://raw.githubusercontent.com/siddusiddhartha/images/master/background.png" width="200px" height="200px;" alt="">
+                          <img width="200px" height="200px;" alt="" src="https://raw.githubusercontent.com/siddusiddhartha/images/master/background.png" class="image">
                         </td>
-                        <td padding="20">
-                          <img class="image" src="https://raw.githubusercontent.com/siddusiddhartha/images/master/jokes.png" alt="jokes" width="250px" height="250px">
-                        </td>
-                      </tr>
-                  </td>
-                  </table>
-                </tr>
-              </table>
-            </tr>
-            </table>
-          </tr>
-      </table>
-      </td>
-      </tr>
-    </table>
-</body>
+                        <td background="https://raw.githubusercontent.com/siddusiddhartha/images/master/jokes.png" bgcolor="#ffffff" width="250" height="250" valign="top">
+  <!--[if gte mso 9]>
+  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:250px;height:250px;">
+    <v:fill type="tile" src="https://raw.githubusercontent.com/siddusiddhartha/images/master/jokes.png" color="#ffffffSS" />
+    <v:textbox inset="0,0,0,0">
+  <![endif]-->
+<div align="center" margin="10"  style="color:#ffffff; margin-left:90px;width:142px; height:230px;">
+  <p style="margin-top:20px; margin-left:20px; width:100px; color:#ffffff;"align="center">siddhartha</p>
+  <p style="margin-left:20px; width:100px; color:#ffffff;"align="center">siddhartha</p>
+  <p style="margin-left:20px; width:100px; color:#ffffff;"align="center">siddhartha</p>
+  <p style="margin-left:20px; width:100px; color:#ffffff;"align="center">siddhartha</p>
+  <p style="margin-left:20px; width:100px; color:#ffffff;"align="center">siddhartha</p>
+</div>
+<!--[if gte mso 9]>
+  </v:textbox>
+</v:rect>
+<![endif]-->
+</td>
+    </tr>
+</tbody></table>
+  </td>  </tr>
 
-</html>
+    </tbody></table>
+            </td></tr>
+            <tr>
+              </tr></tbody></table>
+
+</div>
+
+
+</body></html>
